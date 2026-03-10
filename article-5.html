@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eating Well as a Form of Self-Care — Calm Mind</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            serif: ['Libre Baskerville', 'Georgia', 'serif'],
+            sans: ['Source Sans 3', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              dark: '#111827',
+              light: '#f9fafb',
+              accent: '#2563eb',
+              accentSoft: '#dbeafe'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-size: 16px; line-height: 1.6; }
+    .entry-content p { margin-bottom: 1em; }
+    .entry-content h2 { font-size: 1.35rem; margin-top: 1.5em; margin-bottom: 0.5em; font-family: Libre Baskerville, Georgia, serif; }
+    .widget-title { font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; }
+    .screen-reader-text { position: absolute; left: -9999px; }
+  </style>
+</head>
+<body class="font-sans bg-slate-50 text-gray-900 antialiased">
+  <a class="screen-reader-text focus:not-sr-only focus:absolute focus:p-4 focus:bg-white focus:z-[100]" href="#main">Skip to content</a>
+
+  <!-- Top bar -->
+  <div class="bg-slate-900 text-gray-200 text-xs">
+    <div class="max-w-6xl mx-auto px-3 py-2 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="uppercase tracking-wide text-[10px] text-gray-400">Calm Mind</span>
+        <span class="hidden sm:inline border-l border-gray-700 pl-2 text-gray-300">Self care · Wellness · Mind &amp; body</span>
+      </div>
+      <div class="hidden sm:flex items-center gap-4">
+        <span class="text-gray-300">Your daily self-care headlines</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-3 py-3 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-2">
+        <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-brand-accent to-sky-400 flex items-center justify-center shadow-sm">
+          <span class="font-serif text-lg font-bold text-white">CM</span>
+        </div>
+        <div class="leading-tight">
+          <div class="font-serif text-xl font-bold text-gray-900">Calm Mind</div>
+          <div class="text-[11px] uppercase tracking-wide text-gray-500">Self Care News &amp; Guides</div>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-2 text-sm font-medium">
+        <a href="index.html" class="px-3 py-1.5 rounded-full bg-gray-900 text-white shadow-sm">All articles</a>
+        <a href="index.html#mind" class="px-3 py-1.5 rounded-full text-gray-700 hover:text-brand-accent hover:bg-slate-100">Mind</a>
+        <a href="index.html#body" class="px-3 py-1.5 rounded-full text-gray-700 hover:text-brand-accent hover:bg-slate-100">Body</a>
+        <a href="index.html#life" class="px-3 py-1.5 rounded-full text-gray-700 hover:text-brand-accent hover:bg-slate-100">Life</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="search-toggle" class="hidden md:inline-flex p-2 rounded-full bg-slate-100 text-gray-500 hover:text-gray-900 hover:bg-slate-200" aria-label="Search">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </button>
+        <button id="menu-btn" class="md:hidden p-2 text-gray-600 hover:bg-gray-100 rounded" aria-label="Menu" aria-expanded="false">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden border-t border-gray-200 bg-white px-3 py-3 space-y-1 text-sm">
+      <a href="index.html" class="block py-1.5 px-2 rounded text-gray-800 hover:bg-slate-100">All articles</a>
+      <a href="index.html#mind" class="block py-1.5 px-2 rounded text-gray-700 hover:bg-slate-100">Mind</a>
+      <a href="index.html#body" class="block py-1.5 px-2 rounded text-gray-700 hover:bg-slate-100">Body</a>
+      <a href="index.html#life" class="block py-1.5 px-2 rounded text-gray-700 hover:bg-slate-100">Life</a>
+    </div>
+    <form id="searchform" class="hidden border-t border-gray-200 bg-slate-50" action="index.html" method="get">
+      <div class="max-w-6xl mx-auto px-3 py-3 flex gap-2 items-center">
+        <input type="search" id="s" name="s" placeholder="Search self-care topics..." class="flex-1 px-3 py-2 border border-gray-300 rounded text-sm" />
+        <button type="submit" class="px-4 py-2 bg-brand-accent text-white text-sm font-medium rounded hover:bg-blue-600">Search</button>
+      </div>
+    </form>
+  </header>
+
+  <div id="content" class="max-w-[1200px] mx-auto px-4 py-8">
+    <div class="flex flex-col lg:flex-row gap-8">
+      <main id="main" class="lg:w-2/3 flex-1" role="main">
+        <article id="post-5" class="post type-post hentry single-post">
+          <header class="entry-header border-b border-wp-border pb-4 mb-6">
+            <div class="posted-on mb-2">
+              <a href="index.html" class="text-sm text-wp-gray hover:text-wp-link">February 22, 2025</a>
+            </div>
+            <h1 class="entry-title text-3xl font-serif font-bold mt-0 mb-2 leading-tight text-wp-dark">Eating Well as a Form of Self-Care</h1>
+            <div class="entry-meta text-sm text-wp-gray">
+              <span class="byline">By <a href="index.html" class="hover:text-wp-link">Sarah M.</a></span>
+              <span class="cat-links"> in <a href="index.html" class="hover:text-wp-link">Nutrition</a></span>
+              <span class="comments-link"> · <a href="#comments" class="hover:text-wp-link">2 Comments</a></span>
+            </div>
+          </header>
+          <img src="https://images.unsplash.com/photo-1490645935967-2ded67e9023e?w=800&q=80" alt="Healthy food bowl" class="w-full h-80 object-cover rounded mb-6">
+          <div class="entry-content text-gray-700">
+            <p>What you eat affects your energy, mood, and how you feel in your body. Treating meals as part of self-care doesn't mean strict diets or perfection—it means paying attention, choosing foods that make you feel good, and giving yourself time to eat without guilt or rush.</p>
+            <h2>1. Eat Regularly</h2>
+            <p>Skipping meals can leave you tired and irritable. Try to have something at breakfast, lunch, and dinner, even if it's simple. Regular eating helps keep your energy and mood steadier throughout the day.</p>
+            <h2>2. Add More Whole Foods</h2>
+            <p>Focus on adding rather than cutting out: more vegetables, fruit, whole grains, and proteins you enjoy. Small shifts—an extra serving of vegetables, a piece of fruit with breakfast—add up without feeling restrictive.</p>
+            <h2>3. Stay Hydrated</h2>
+            <p>Dehydration can make you feel low and foggy. Keep a glass or bottle of water nearby and sip through the day. Herbal tea and water-rich foods like fruit and soup count too.</p>
+            <h2>4. Eat Without Screens When You Can</h2>
+            <p>When possible, sit down and eat without your phone or TV. Even one meal a day eaten mindfully can help you notice hunger, fullness, and taste, and turns eating into a real break.</p>
+            <h2>5. Be Kind to Yourself</h2>
+            <p>Some days you'll eat exactly how you'd like; other days you'll grab what's easy. That's normal. Self-care around food is about consistency over time, not perfect choices at every meal.</p>
+            <p class="mt-8"><a href="index.html" class="text-wp-link font-medium hover:underline">&larr; Back to all posts</a></p>
+          </div>
+        </article>
+        <section id="comments" class="mt-10 pt-8 border-t border-wp-border">
+          <h3 class="font-serif text-xl font-bold text-wp-dark mb-4">2 Comments</h3>
+          <ol class="list-none p-0 m-0 space-y-4">
+            <li class="pl-4 border-l-2 border-wp-border">
+              <strong class="text-wp-dark">Jess</strong> <span class="text-sm text-wp-gray">— February 23, 2025</span>
+              <p class="mt-1 text-gray-700">The "add more" approach is so much easier than cutting things out. I've been adding a side salad to dinner and it actually sticks.</p>
+            </li>
+            <li class="pl-4 border-l-2 border-wp-border">
+              <strong class="text-wp-dark">Alex</strong> <span class="text-sm text-wp-gray">— February 24, 2025</span>
+              <p class="mt-1 text-gray-700">Reminder about hydration was needed. I feel so much better when I remember to drink water.</p>
+            </li>
+          </ol>
+        </section>
+      </main>
+
+      <aside id="secondary" class="sidebar lg:w-1/3 lg:min-w-[280px]" role="complementary">
+        <div class="widget-area space-y-8">
+          <section class="widget widget_search border-b border-wp-border pb-6">
+            <h3 class="widget-title text-wp-dark mb-3">Search</h3>
+            <form role="search" method="get" class="search-form" action="index.html">
+              <label class="screen-reader-text" for="sidebar-search">Search</label>
+              <div class="flex gap-0">
+                <input type="search" id="sidebar-search" name="s" class="flex-1 px-3 py-2 border border-wp-border border-r-0 rounded-l text-sm" placeholder="Search..." value="">
+                <button type="submit" class="px-4 py-2 bg-wp-link text-white text-sm font-medium rounded-r hover:opacity-90">Search</button>
+              </div>
+            </form>
+          </section>
+          <section class="widget widget_recent_entries border-b border-wp-border pb-6">
+            <h3 class="widget-title text-wp-dark mb-3">Recent Posts</h3>
+            <ul class="list-none p-0 m-0 space-y-3">
+              <li class="flex gap-3">
+                <a href="article-1.html" class="shrink-0 w-16 h-16 rounded overflow-hidden"><img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=128&q=80" alt="" class="w-full h-full object-cover"></a>
+                <div>
+                  <a href="article-1.html" class="font-medium text-wp-dark hover:text-wp-link text-sm leading-snug">5 Morning Rituals for a Calmer Day</a>
+                  <span class="block text-xs text-wp-gray mt-0.5">March 6, 2025</span>
+                </div>
+              </li>
+              <li class="flex gap-3">
+                <a href="article-2.html" class="shrink-0 w-16 h-16 rounded overflow-hidden"><img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=128&q=80" alt="" class="w-full h-full object-cover"></a>
+                <div>
+                  <a href="article-2.html" class="font-medium text-wp-dark hover:text-wp-link text-sm leading-snug">The Art of a Restful Evening</a>
+                  <span class="block text-xs text-wp-gray mt-0.5">March 4, 2025</span>
+                </div>
+              </li>
+              <li class="flex gap-3">
+                <a href="article-5.html" class="shrink-0 w-16 h-16 rounded overflow-hidden"><img src="https://images.unsplash.com/photo-1490645935967-2ded67e9023e?w=128&q=80" alt="" class="w-full h-full object-cover"></a>
+                <div>
+                  <a href="article-5.html" class="font-medium text-wp-dark hover:text-wp-link text-sm leading-snug">Eating Well as a Form of Self-Care</a>
+                  <span class="block text-xs text-wp-gray mt-0.5">February 22, 2025</span>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <section class="widget widget_categories border-b border-wp-border pb-6">
+            <h3 class="widget-title text-wp-dark mb-3">Categories</h3>
+            <ul class="list-none p-0 m-0 space-y-2">
+              <li><a href="index.html" class="text-wp-dark hover:text-wp-link">Mindfulness</a></li>
+              <li><a href="index.html" class="text-wp-dark hover:text-wp-link">Relaxation</a></li>
+              <li><a href="index.html" class="text-wp-dark hover:text-wp-link">Journaling</a></li>
+              <li><a href="index.html" class="text-wp-dark hover:text-wp-link">Movement</a></li>
+              <li><a href="index.html" class="text-wp-dark hover:text-wp-link">Nutrition</a></li>
+              <li><a href="index.html" class="text-wp-dark hover:text-wp-link">Boundaries</a></li>
+            </ul>
+          </section>
+          <section class="widget widget_archive border-b border-wp-border pb-6">
+            <h3 class="widget-title text-wp-dark mb-3">Archives</h3>
+            <ul class="list-none p-0 m-0 space-y-2">
+              <li><a href="index.html" class="text-wp-dark hover:text-wp-link">March 2025</a></li>
+              <li><a href="index.html" class="text-wp-dark hover:text-wp-link">February 2025</a></li>
+              <li><a href="index.html" class="text-wp-dark hover:text-wp-link">January 2025</a></li>
+            </ul>
+          </section>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <footer id="colophon" class="site-footer bg-wp-bg border-t-2 border-wp-border mt-12">
+    <div class="footer-widgets max-w-[1200px] mx-auto px-4 py-10">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="widget">
+          <h3 class="widget-title text-wp-dark mb-3">About Calm Mind</h3>
+          <p id="about" class="text-sm text-gray-700">We believe self-care is not a luxury but a practice. Our articles support your mental and physical wellness with simple, realistic ideas you can use every day.</p>
+        </div>
+        <div class="widget">
+          <h3 class="widget-title text-wp-dark mb-3">Quick Links</h3>
+          <ul class="list-none p-0 m-0 space-y-2 text-sm">
+            <li><a href="index.html" class="text-wp-dark hover:text-wp-link">Home</a></li>
+            <li><a href="index.html#about" class="text-wp-dark hover:text-wp-link">About</a></li>
+            <li><a href="index.html#contact" class="text-wp-dark hover:text-wp-link">Contact</a></li>
+            <li><a href="index.html" class="text-wp-dark hover:text-wp-link">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="widget" id="contact">
+          <h3 class="widget-title text-wp-dark mb-3">Newsletter &amp; Contact</h3>
+          <p class="text-sm text-gray-700 mb-2">Get self-care tips in your inbox.</p>
+          <form class="flex gap-0" action="index.html" method="post">
+            <input type="email" placeholder="Your email" class="flex-1 px-3 py-2 border border-wp-border rounded-l text-sm">
+            <button type="submit" class="px-4 py-2 bg-wp-link text-white text-sm rounded-r hover:opacity-90">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="site-info max-w-[1200px] mx-auto px-4 py-4 text-center text-sm text-wp-gray border-t border-wp-border">
+      <p class="m-0">&copy; 2025 Calm Mind. All rights reserved. Self Care &amp; Wellness Blog.</p>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+</html>

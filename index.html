@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calm Mind — Self Care &amp; Wellness Blog</title>
+  <title>Calm Mind — Self Care News &amp; Articles</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +17,12 @@
             sans: ['Source Sans 3', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
           },
           colors: {
-            wp: { gray: '#646970', dark: '#1d2327', link: '#2271b1', border: '#c3c4c7', bg: '#f0f0f1' }
+            brand: {
+              dark: '#111827',
+              light: '#f9fafb',
+              accent: '#2563eb',
+              accentSoft: '#dbeafe'
+            }
           }
         }
       }
@@ -25,266 +30,309 @@
   </script>
   <style>
     body { font-size: 16px; line-height: 1.6; }
-    .entry-content p { margin-bottom: 1em; }
-    .widget-title { font-size: 1rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.02em; }
-    .screen-reader-text { position: absolute; left: -9999px; }
+    .entry-excerpt p { margin-bottom: 0.75rem; }
   </style>
 </head>
-<body class="font-sans text-gray-800 bg-white antialiased">
-  <!-- Skip link (WP a11y) -->
-  <a class="screen-reader-text focus:not-sr-only focus:absolute focus:p-4 focus:bg-white focus:z-[100]" href="#main">Skip to content</a>
-
-  <!-- Header (WP-style site header) -->
-  <header id="masthead" class="border-b-2 border-wp-border bg-white">
-    <div class="max-w-[1200px] mx-auto px-4 py-4 flex flex-wrap items-center justify-between gap-4">
-      <div class="flex items-center gap-8">
-        <a href="#" class="site-title font-serif text-2xl font-bold text-wp-dark no-underline hover:text-wp-link">Calm Mind</a>
-        <p class="hidden sm:block text-sm text-wp-gray">Self Care &amp; Wellness</p>
+<body class="font-sans bg-slate-50 text-gray-900 antialiased">
+  <!-- Top bar -->
+  <div class="bg-slate-900 text-gray-200 text-xs">
+    <div class="max-w-6xl mx-auto px-3 py-2 flex items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="uppercase tracking-wide text-[10px] text-gray-400">Calm Mind</span>
+        <span class="hidden sm:inline border-l border-gray-700 pl-2 text-gray-300">Self care · Wellness · Mind &amp; body</span>
       </div>
-      <nav class="main-navigation flex items-center gap-6" aria-label="Main menu">
-        <a href="#" class="text-wp-dark font-medium hover:text-wp-link">Home</a>
-        <a href="#about" class="text-wp-dark font-medium hover:text-wp-link">About</a>
-        <a href="#contact" class="text-wp-dark font-medium hover:text-wp-link">Contact</a>
-        <div class="search-form-wrapper relative">
-          <button id="search-toggle" class="p-2 text-wp-gray hover:text-wp-dark" aria-label="Search"><svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg></button>
-          <form id="searchform" class="hidden absolute right-0 top-full mt-1 bg-white border border-wp-border shadow-lg rounded p-2 min-w-[220px]" role="search" action="#" method="get">
-            <label class="screen-reader-text" for="s">Search</label>
-            <input type="search" id="s" name="s" placeholder="Search..." class="w-full px-3 py-2 border border-wp-border rounded text-sm" value="">
-            <button type="submit" class="mt-2 w-full py-2 bg-wp-link text-white text-sm font-medium rounded hover:opacity-90">Search</button>
-          </form>
-        </div>
-      </nav>
-      <button id="menu-btn" class="lg:hidden p-2 text-wp-gray hover:bg-wp-bg rounded" aria-label="Menu" aria-expanded="false">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
-      </button>
-    </div>
-    <div id="mobile-menu" class="hidden lg:hidden border-t border-wp-border bg-wp-bg px-4 py-3">
-      <a href="#" class="block py-2 text-wp-dark">Home</a>
-      <a href="#about" class="block py-2 text-wp-dark">About</a>
-      <a href="#contact" class="block py-2 text-wp-dark">Contact</a>
-    </div>
-  </header>
-
-  <div id="content" class="max-w-[1200px] mx-auto px-4 py-8">
-    <div class="flex flex-col lg:flex-row gap-8">
-      <!-- Main content (posts loop) -->
-      <main id="main" class="lg:w-2/3 flex-1" role="main">
-        <!-- Post 1 -->
-        <article id="post-1" class="post type-post hentry border-b border-wp-border pb-8 mb-8">
-          <header class="entry-header">
-            <div class="posted-on mb-2">
-              <a href="#" class="text-sm text-wp-gray hover:text-wp-link">March 6, 2025</a>
-            </div>
-            <h2 class="entry-title text-2xl font-serif font-bold mt-0 mb-2 leading-tight">
-              <a href="#" class="text-wp-dark hover:text-wp-link no-underline">5 Morning Rituals for a Calmer Day</a>
-            </h2>
-            <div class="entry-meta text-sm text-wp-gray mb-4">
-              <span class="byline">By <a href="#" class="hover:text-wp-link">Sarah M.</a></span>
-              <span class="cat-links"> in <a href="#" class="hover:text-wp-link">Mindfulness</a></span>
-              <span class="comments-link"> · <a href="#" class="hover:text-wp-link">3 Comments</a></span>
-            </div>
-          </header>
-          <a href="#" class="block mb-4">
-            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=800&q=80" alt="Yoga and meditation" class="w-full h-64 object-cover rounded">
-          </a>
-          <div class="entry-content text-gray-700">
-            <p>Start your day with intention. Simple habits that take less than 15 minutes and set a peaceful tone for the rest of your day. From breath work to a short stretch, here’s how to build a morning routine that actually sticks.</p>
-            <p class="read-more mt-4">
-              <a href="#" class="text-wp-link font-medium hover:underline">Continue reading <span class="screen-reader-text">5 Morning Rituals for a Calmer Day</span></a>
-            </p>
-          </div>
-        </article>
-
-        <!-- Post 2 -->
-        <article id="post-2" class="post type-post hentry border-b border-wp-border pb-8 mb-8">
-          <header class="entry-header">
-            <div class="posted-on mb-2">
-              <a href="#" class="text-sm text-wp-gray hover:text-wp-link">March 4, 2025</a>
-            </div>
-            <h2 class="entry-title text-2xl font-serif font-bold mt-0 mb-2 leading-tight">
-              <a href="#" class="text-wp-dark hover:text-wp-link no-underline">The Art of a Restful Evening</a>
-            </h2>
-            <div class="entry-meta text-sm text-wp-gray mb-4">
-              <span class="byline">By <a href="#" class="hover:text-wp-link">Sarah M.</a></span>
-              <span class="cat-links"> in <a href="#" class="hover:text-wp-link">Relaxation</a></span>
-              <span class="comments-link"> · <a href="#" class="hover:text-wp-link">1 Comment</a></span>
-            </div>
-          </header>
-          <a href="#" class="block mb-4">
-            <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=800&q=80" alt="Relaxing bath and candles" class="w-full h-64 object-cover rounded">
-          </a>
-          <div class="entry-content text-gray-700">
-            <p>Wind down properly with a soothing routine. A warm bath, soft lighting, and screen-free time can improve sleep and help you let go of the day. We share practical steps for a restful evening you can do every night.</p>
-            <p class="read-more mt-4">
-              <a href="#" class="text-wp-link font-medium hover:underline">Continue reading <span class="screen-reader-text">The Art of a Restful Evening</span></a>
-            </p>
-          </div>
-        </article>
-
-        <!-- Post 3 -->
-        <article id="post-3" class="post type-post hentry border-b border-wp-border pb-8 mb-8">
-          <header class="entry-header">
-            <div class="posted-on mb-2">
-              <a href="#" class="text-sm text-wp-gray hover:text-wp-link">March 1, 2025</a>
-            </div>
-            <h2 class="entry-title text-2xl font-serif font-bold mt-0 mb-2 leading-tight">
-              <a href="#" class="text-wp-dark hover:text-wp-link no-underline">Why Journaling Improves Your Mental Health</a>
-            </h2>
-            <div class="entry-meta text-sm text-wp-gray mb-4">
-              <span class="byline">By <a href="#" class="hover:text-wp-link">Sarah M.</a></span>
-              <span class="cat-links"> in <a href="#" class="hover:text-wp-link">Journaling</a></span>
-              <span class="comments-link"> · <a href="#" class="hover:text-wp-link">5 Comments</a></span>
-            </div>
-          </header>
-          <a href="#" class="block mb-4">
-            <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=800&q=80" alt="Journal and pen" class="w-full h-64 object-cover rounded">
-          </a>
-          <div class="entry-content text-gray-700">
-            <p>Putting thoughts on paper reduces stress and clarifies feelings. This short guide covers why journaling works and how to get started—even if you’ve never kept a diary before.</p>
-            <p class="read-more mt-4">
-              <a href="#" class="text-wp-link font-medium hover:underline">Continue reading <span class="screen-reader-text">Why Journaling Improves Your Mental Health</span></a>
-            </p>
-          </div>
-        </article>
-
-        <!-- Post 4 -->
-        <article id="post-4" class="post type-post hentry border-b border-wp-border pb-8 mb-8">
-          <header class="entry-header">
-            <div class="posted-on mb-2">
-              <a href="#" class="text-sm text-wp-gray hover:text-wp-link">February 26, 2025</a>
-            </div>
-            <h2 class="entry-title text-2xl font-serif font-bold mt-0 mb-2 leading-tight">
-              <a href="#" class="text-wp-dark hover:text-wp-link no-underline">Gentle Movement When You're Stressed</a>
-            </h2>
-            <div class="entry-meta text-sm text-wp-gray mb-4">
-              <span class="byline">By <a href="#" class="hover:text-wp-link">Sarah M.</a></span>
-              <span class="cat-links"> in <a href="#" class="hover:text-wp-link">Movement</a></span>
-              <span class="comments-link"> · <a href="#" class="hover:text-wp-link">2 Comments</a></span>
-            </div>
-          </header>
-          <a href="#" class="block mb-4">
-            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=800&q=80" alt="Person stretching" class="w-full h-64 object-cover rounded">
-          </a>
-          <div class="entry-content text-gray-700">
-            <p>Light stretching and walking can ease tension without a gym. We share a few simple moves you can do at home in just a few minutes when stress kicks in.</p>
-            <p class="read-more mt-4">
-              <a href="#" class="text-wp-link font-medium hover:underline">Continue reading <span class="screen-reader-text">Gentle Movement When You're Stressed</span></a>
-            </p>
-          </div>
-        </article>
-
-        <!-- Pagination (WP nav) -->
-        <nav class="navigation pagination border-t border-wp-border pt-6" role="navigation" aria-label="Posts">
-          <div class="nav-links flex flex-wrap gap-2">
-            <span class="page-numbers current px-3 py-2 bg-wp-link text-white rounded">1</span>
-            <a class="page-numbers px-3 py-2 text-wp-link hover:bg-wp-bg rounded" href="#">2</a>
-            <a class="next page-numbers px-3 py-2 text-wp-link hover:bg-wp-bg rounded" href="#">Older posts &rarr;</a>
-          </div>
-        </nav>
-      </main>
-
-      <!-- Sidebar (WP widget area) -->
-      <aside id="secondary" class="sidebar lg:w-1/3 lg:min-w-[280px]" role="complementary">
-        <div class="widget-area space-y-8">
-          <!-- Search widget -->
-          <section class="widget widget_search border-b border-wp-border pb-6">
-            <h3 class="widget-title text-wp-dark mb-3">Search</h3>
-            <form role="search" method="get" class="search-form" action="#">
-              <label class="screen-reader-text" for="sidebar-search">Search</label>
-              <div class="flex gap-0">
-                <input type="search" id="sidebar-search" name="s" class="flex-1 px-3 py-2 border border-wp-border border-r-0 rounded-l text-sm" placeholder="Search..." value="">
-                <button type="submit" class="px-4 py-2 bg-wp-link text-white text-sm font-medium rounded-r hover:opacity-90">Search</button>
-              </div>
-            </form>
-          </section>
-
-          <!-- Recent Posts widget -->
-          <section class="widget widget_recent_entries border-b border-wp-border pb-6">
-            <h3 class="widget-title text-wp-dark mb-3">Recent Posts</h3>
-            <ul class="list-none p-0 m-0 space-y-3">
-              <li class="flex gap-3">
-                <a href="#" class="shrink-0 w-16 h-16 rounded overflow-hidden"><img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=128&q=80" alt="" class="w-full h-full object-cover"></a>
-                <div>
-                  <a href="#" class="font-medium text-wp-dark hover:text-wp-link text-sm leading-snug">5 Morning Rituals for a Calmer Day</a>
-                  <span class="block text-xs text-wp-gray mt-0.5">March 6, 2025</span>
-                </div>
-              </li>
-              <li class="flex gap-3">
-                <a href="#" class="shrink-0 w-16 h-16 rounded overflow-hidden"><img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=128&q=80" alt="" class="w-full h-full object-cover"></a>
-                <div>
-                  <a href="#" class="font-medium text-wp-dark hover:text-wp-link text-sm leading-snug">The Art of a Restful Evening</a>
-                  <span class="block text-xs text-wp-gray mt-0.5">March 4, 2025</span>
-                </div>
-              </li>
-              <li class="flex gap-3">
-                <a href="#" class="shrink-0 w-16 h-16 rounded overflow-hidden"><img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=128&q=80" alt="" class="w-full h-full object-cover"></a>
-                <div>
-                  <a href="#" class="font-medium text-wp-dark hover:text-wp-link text-sm leading-snug">Why Journaling Improves Your Mental Health</a>
-                  <span class="block text-xs text-wp-gray mt-0.5">March 1, 2025</span>
-                </div>
-              </li>
-            </ul>
-          </section>
-
-          <!-- Categories widget -->
-          <section class="widget widget_categories border-b border-wp-border pb-6">
-            <h3 class="widget-title text-wp-dark mb-3">Categories</h3>
-            <ul class="list-none p-0 m-0 space-y-2">
-              <li><a href="#" class="text-wp-dark hover:text-wp-link">Mindfulness</a></li>
-              <li><a href="#" class="text-wp-dark hover:text-wp-link">Relaxation</a></li>
-              <li><a href="#" class="text-wp-dark hover:text-wp-link">Journaling</a></li>
-              <li><a href="#" class="text-wp-dark hover:text-wp-link">Movement</a></li>
-              <li><a href="#" class="text-wp-dark hover:text-wp-link">Nutrition</a></li>
-              <li><a href="#" class="text-wp-dark hover:text-wp-link">Boundaries</a></li>
-            </ul>
-          </section>
-
-          <!-- Archives widget -->
-          <section class="widget widget_archive border-b border-wp-border pb-6">
-            <h3 class="widget-title text-wp-dark mb-3">Archives</h3>
-            <ul class="list-none p-0 m-0 space-y-2">
-              <li><a href="#" class="text-wp-dark hover:text-wp-link">March 2025</a></li>
-              <li><a href="#" class="text-wp-dark hover:text-wp-link">February 2025</a></li>
-              <li><a href="#" class="text-wp-dark hover:text-wp-link">January 2025</a></li>
-            </ul>
-          </section>
-        </div>
-      </aside>
+      <div class="flex items-center gap-4">
+        <span class="hidden sm:inline text-gray-300">Your daily self-care headlines</span>
+      </div>
     </div>
   </div>
 
-  <!-- Footer (WP footer widget area + site info) -->
-  <footer id="colophon" class="site-footer bg-wp-bg border-t-2 border-wp-border mt-12">
-    <div class="footer-widgets max-w-[1200px] mx-auto px-4 py-10">
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <div class="widget">
-          <h3 class="widget-title text-wp-dark mb-3">About Calm Mind</h3>
-          <p id="about" class="text-sm text-gray-700">We believe self-care is not a luxury but a practice. Our articles support your mental and physical wellness with simple, realistic ideas you can use every day.</p>
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/80 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-3 py-3 flex items-center justify-between gap-4">
+      <a href="index.html" class="flex items-center gap-2">
+        <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-brand-accent to-sky-400 flex items-center justify-center shadow-sm">
+          <span class="font-serif text-lg font-bold text-white">CM</span>
         </div>
-        <div class="widget">
-          <h3 class="widget-title text-wp-dark mb-3">Quick Links</h3>
-          <ul class="list-none p-0 m-0 space-y-2 text-sm">
-            <li><a href="#" class="text-wp-dark hover:text-wp-link">Home</a></li>
-            <li><a href="#about" class="text-wp-dark hover:text-wp-link">About</a></li>
-            <li><a href="#contact" class="text-wp-dark hover:text-wp-link">Contact</a></li>
-            <li><a href="#" class="text-wp-dark hover:text-wp-link">Privacy Policy</a></li>
-          </ul>
+        <div class="leading-tight">
+          <div class="font-serif text-xl font-bold text-gray-900">Calm Mind</div>
+          <div class="text-[11px] uppercase tracking-wide text-gray-500">Self Care News &amp; Guides</div>
         </div>
-        <div class="widget">
-          <h3 class="widget-title text-wp-dark mb-3">Newsletter</h3>
-          <p class="text-sm text-gray-700 mb-2">Get self-care tips in your inbox.</p>
-          <form class="flex gap-0" action="#" method="post">
-            <input type="email" placeholder="Your email" class="flex-1 px-3 py-2 border border-wp-border rounded-l text-sm">
-            <button type="submit" class="px-4 py-2 bg-wp-link text-white text-sm rounded-r hover:opacity-90">Subscribe</button>
-          </form>
-        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-2 text-sm font-medium">
+        <a href="index.html" class="px-3 py-1.5 rounded-full bg-gray-900 text-white shadow-sm">All articles</a>
+        <a href="#mind" class="px-3 py-1.5 rounded-full text-gray-700 hover:text-brand-accent hover:bg-slate-100">Mind</a>
+        <a href="#body" class="px-3 py-1.5 rounded-full text-gray-700 hover:text-brand-accent hover:bg-slate-100">Body</a>
+        <a href="#life" class="px-3 py-1.5 rounded-full text-gray-700 hover:text-brand-accent hover:bg-slate-100">Life</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <button id="search-toggle" class="hidden md:inline-flex p-2 rounded-full bg-slate-100 text-gray-500 hover:text-gray-900 hover:bg-slate-200" aria-label="Search">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+        </button>
+        <button id="menu-btn" class="md:hidden p-2 text-gray-600 hover:bg-gray-100 rounded" aria-label="Menu" aria-expanded="false">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
       </div>
     </div>
-    <div class="site-info max-w-[1200px] mx-auto px-4 py-4 text-center text-sm text-wp-gray border-t border-wp-border">
-      <p class="m-0">&copy; 2025 Calm Mind. All rights reserved. Self Care &amp; Wellness Blog.</p>
+    <div id="mobile-menu" class="md:hidden hidden border-t border-gray-200 bg-white px-3 py-3 space-y-1 text-sm">
+      <a href="index.html" class="block py-1.5 px-2 rounded text-gray-800 hover:bg-slate-100">All articles</a>
+      <a href="#mind" class="block py-1.5 px-2 rounded text-gray-700 hover:bg-slate-100">Mind</a>
+      <a href="#body" class="block py-1.5 px-2 rounded text-gray-700 hover:bg-slate-100">Body</a>
+      <a href="#life" class="block py-1.5 px-2 rounded text-gray-700 hover:bg-slate-100">Life</a>
+    </div>
+    <form id="searchform" class="hidden border-t border-gray-200 bg-slate-50">
+      <div class="max-w-6xl mx-auto px-3 py-3 flex gap-2 items-center">
+        <input type="search" id="s" name="s" placeholder="Search self-care topics..." class="flex-1 px-3 py-2 border border-gray-300 rounded text-sm" />
+        <button type="submit" class="px-4 py-2 bg-brand-accent text-white text-sm font-medium rounded hover:bg-blue-600">Search</button>
+      </div>
+    </form>
+  </header>
+
+  <!-- Main content -->
+  <main class="max-w-6xl mx-auto px-3 mt-6 mb-12">
+    <div class="grid lg:grid-cols-3 gap-6">
+      <!-- Left: featured + latest -->
+      <section class="lg:col-span-2 space-y-6">
+        <!-- Featured story -->
+        <article class="bg-white rounded-2xl shadow-sm overflow-hidden border border-gray-200/80 hover:shadow-lg hover:border-brand-accent/40 transition">
+          <a href="article-1.html">
+            <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=1200&q=80" alt="Morning self-care rituals" class="w-full h-64 md:h-80 object-cover">
+          </a>
+          <div class="p-5 md:p-6">
+            <div class="flex items-center gap-2 text-xs text-gray-500 mb-1">
+              <span class="uppercase tracking-wide text-brand-accent font-semibold">Mind</span>
+              <span>&bull;</span>
+              <span>March 6, 2025</span>
+            </div>
+            <h1 class="text-2xl md:text-3xl font-serif font-bold mb-2.5">
+              <a href="article-1.html" class="text-gray-900 hover:text-brand-accent">5 Morning Rituals for a Calmer Day</a>
+            </h1>
+            <p class="text-sm md:text-base text-gray-700 max-w-2xl">
+              Start your day with intention. Short breathing, movement, and reflection rituals that set a peaceful tone in under 15 minutes.
+            </p>
+          </div>
+        </article>
+
+        <!-- Latest list -->
+        <section aria-label="Latest self-care articles" class="space-y-3">
+          <h2 class="text-sm font-semibold tracking-wide uppercase text-gray-500 border-l-4 border-brand-accent pl-2">Latest</h2>
+
+          <!-- article-2 -->
+          <article class="flex gap-3 bg-white rounded-2xl border border-gray-200/80 p-3 hover:border-brand-accent/40 hover:shadow-md transition">
+            <a href="article-2.html" class="shrink-0 w-28 md:w-32 h-20 md:h-24 rounded overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1545205597-3d9d02c29597?w=400&q=80" alt="Restful evening routine" class="w-full h-full object-cover">
+            </a>
+            <div class="entry-excerpt">
+              <div class="text-[11px] uppercase tracking-wide text-gray-500 mb-0.5">Body &amp; Sleep</div>
+              <h3 class="text-sm md:text-base font-semibold leading-snug">
+                <a href="article-2.html" class="text-gray-900 hover:text-brand-accent">The Art of a Restful Evening</a>
+              </h3>
+              <p class="hidden md:block text-xs text-gray-600 mt-1">
+                Simple habits before bed that help your mind slow down and your body rest.
+              </p>
+            </div>
+          </article>
+
+          <!-- article-3 -->
+          <article class="flex gap-3 bg-white rounded-2xl border border-gray-200/80 p-3 hover:border-brand-accent/40 hover:shadow-md transition">
+            <a href="article-3.html" class="shrink-0 w-28 md:w-32 h-20 md:h-24 rounded overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?w=400&q=80" alt="Journaling for mental health" class="w-full h-full object-cover">
+            </a>
+            <div class="entry-excerpt">
+              <div class="text-[11px] uppercase tracking-wide text-gray-500 mb-0.5">Mind</div>
+              <h3 class="text-sm md:text-base font-semibold leading-snug">
+                <a href="article-3.html" class="text-gray-900 hover:text-brand-accent">Why Journaling Improves Your Mental Health</a>
+              </h3>
+              <p class="hidden md:block text-xs text-gray-600 mt-1">
+                How a few minutes with a notebook can lower stress and clarify what you feel.
+              </p>
+            </div>
+          </article>
+
+          <!-- article-4 -->
+          <article class="flex gap-3 bg-white rounded-2xl border border-gray-200/80 p-3 hover:border-brand-accent/40 hover:shadow-md transition">
+            <a href="article-4.html" class="shrink-0 w-28 md:w-32 h-20 md:h-24 rounded overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?w=400&q=80" alt="Gentle movement" class="w-full h-full object-cover">
+            </a>
+            <div class="entry-excerpt">
+              <div class="text-[11px] uppercase tracking-wide text-gray-500 mb-0.5">Body</div>
+              <h3 class="text-sm md:text-base font-semibold leading-snug">
+                <a href="article-4.html" class="text-gray-900 hover:text-brand-accent">Gentle Movement When You're Stressed</a>
+              </h3>
+              <p class="hidden md:block text-xs text-gray-600 mt-1">
+                Light stretching and walking you can do at home when tension builds up.
+              </p>
+            </div>
+          </article>
+
+          <!-- article-5 -->
+          <article class="flex gap-3 bg-white rounded-2xl border border-gray-200/80 p-3 hover:border-brand-accent/40 hover:shadow-md transition">
+            <a href="article-5.html" class="shrink-0 w-28 md:w-32 h-20 md:h-24 rounded overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1490645935967-2ded67e9023e?w=400&q=80" alt="Eating well as self-care" class="w-full h-full object-cover">
+            </a>
+            <div class="entry-excerpt">
+              <div class="text-[11px] uppercase tracking-wide text-gray-500 mb-0.5">Food &amp; Energy</div>
+              <h3 class="text-sm md:text-base font-semibold leading-snug">
+                <a href="article-5.html" class="text-gray-900 hover:text-brand-accent">Eating Well as a Form of Self-Care</a>
+              </h3>
+              <p class="hidden md:block text-xs text-gray-600 mt-1">
+                Gentle, realistic ideas for nourishing yourself without strict rules.
+              </p>
+            </div>
+          </article>
+
+          <!-- article-6 -->
+          <article class="flex gap-3 bg-white rounded-2xl border border-gray-200/80 p-3 hover:border-brand-accent/40 hover:shadow-md transition">
+            <a href="article-6.html" class="shrink-0 w-28 md:w-32 h-20 md:h-24 rounded overflow-hidden">
+              <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=400&q=80" alt="Friends together setting boundaries" class="w-full h-full object-cover">
+            </a>
+            <div class="entry-excerpt">
+              <div class="text-[11px] uppercase tracking-wide text-gray-500 mb-0.5">Relationships</div>
+              <h3 class="text-sm md:text-base font-semibold leading-snug">
+                <a href="article-6.html" class="text-gray-900 hover:text-brand-accent">Setting Boundaries with Kindness</a>
+              </h3>
+              <p class="hidden md:block text-xs text-gray-600 mt-1">
+                How to protect your time and energy while staying connected to others.
+              </p>
+            </div>
+          </article>
+        </section>
+      </section>
+
+      <!-- Right: sidebar -->
+      <aside class="space-y-5">
+        <!-- Daily tip -->
+        <section class="bg-brand-accentSoft border border-blue-100 rounded-2xl p-4 shadow-sm">
+          <h2 class="text-xs font-semibold tracking-wide uppercase text-blue-900 mb-1">Daily self-care tip</h2>
+          <p id="daily-tip" class="text-sm text-blue-950">
+            Take three slow breaths. In for four counts, hold for four, out for six. Repeat whenever you need a reset.
+          </p>
+        </section>
+
+        <!-- Most read -->
+        <section class="bg-white rounded-2xl border border-gray-200/80 p-4 shadow-sm">
+          <h2 class="text-xs font-semibold tracking-wide uppercase text-gray-600 mb-3">Most read</h2>
+          <ul class="space-y-3 text-sm">
+            <li>
+              <a href="article-1.html" class="font-semibold text-gray-900 hover:text-brand-accent">5 Morning Rituals for a Calmer Day</a>
+            </li>
+            <li>
+              <a href="article-2.html" class="font-semibold text-gray-900 hover:text-brand-accent">The Art of a Restful Evening</a>
+            </li>
+            <li>
+              <a href="article-3.html" class="font-semibold text-gray-900 hover:text-brand-accent">Why Journaling Improves Your Mental Health</a>
+            </li>
+            <li>
+              <a href="article-5.html" class="font-semibold text-gray-900 hover:text-brand-accent">Eating Well as a Form of Self-Care</a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- Newsletter -->
+        <section class="bg-white rounded-2xl border border-gray-200/80 p-4 shadow-sm">
+          <h2 class="text-xs font-semibold tracking-wide uppercase text-gray-600 mb-2">Newsletter</h2>
+          <p class="text-xs text-gray-600 mb-2">Get one gentle self-care reminder in your inbox each week.</p>
+          <form class="space-y-2" action="index.html" method="post">
+            <input type="email" placeholder="Your email" class="w-full px-3 py-2 border border-gray-300 rounded text-sm">
+            <button type="submit" class="w-full px-3 py-2 bg-brand-accent text-white text-sm font-medium rounded hover:bg-blue-600">Subscribe</button>
+          </form>
+        </section>
+      </aside>
+    </div>
+
+    <!-- Category sections -->
+    <section id="mind" class="mt-10 border-t border-gray-200 pt-6">
+      <h2 class="text-sm font-semibold tracking-wide uppercase text-gray-700 mb-4">Mind &amp; Emotions</h2>
+      <div class="grid md:grid-cols-3 gap-4">
+        <article class="bg-white rounded-2xl border border-gray-200/80 p-4 flex flex-col shadow-sm">
+          <span class="text-[11px] uppercase tracking-wide text-gray-500 mb-1">Mindfulness</span>
+          <h3 class="text-base font-semibold mb-1">
+            <a href="article-3.html" class="text-gray-900 hover:text-brand-accent">Why Journaling Improves Your Mental Health</a>
+          </h3>
+          <p class="text-xs text-gray-600 flex-1">A simple practice to clear your head and understand what you feel.</p>
+        </article>
+        <article class="bg-white rounded-2xl border border-gray-200/80 p-4 flex flex-col shadow-sm">
+          <span class="text-[11px] uppercase tracking-wide text-gray-500 mb-1">Boundaries</span>
+          <h3 class="text-base font-semibold mb-1">
+            <a href="article-6.html" class="text-gray-900 hover:text-brand-accent">Setting Boundaries with Kindness</a>
+          </h3>
+          <p class="text-xs text-gray-600 flex-1">How to say no without guilt so you can protect your energy.</p>
+        </article>
+        <article class="bg-white rounded-2xl border border-gray-200/80 p-4 flex flex-col shadow-sm">
+          <span class="text-[11px] uppercase tracking-wide text-gray-500 mb-1">Calm</span>
+          <h3 class="text-base font-semibold mb-1">
+            <a href="article-1.html" class="text-gray-900 hover:text-brand-accent">5 Morning Rituals for a Calmer Day</a>
+          </h3>
+          <p class="text-xs text-gray-600 flex-1">Breath, movement, and intention to start the day more grounded.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="body" class="mt-10 border-t border-gray-200 pt-6">
+      <h2 class="text-sm font-semibold tracking-wide uppercase text-gray-700 mb-4">Body &amp; Energy</h2>
+      <div class="grid md:grid-cols-3 gap-4">
+        <article class="bg-white rounded-2xl border border-gray-200/80 p-4 flex flex-col shadow-sm">
+          <span class="text-[11px] uppercase tracking-wide text-gray-500 mb-1">Sleep</span>
+          <h3 class="text-base font-semibold mb-1">
+            <a href="article-2.html" class="text-gray-900 hover:text-brand-accent">The Art of a Restful Evening</a>
+          </h3>
+          <p class="text-xs text-gray-600 flex-1">A wind-down routine that tells your body it’s safe to rest.</p>
+        </article>
+        <article class="bg-white rounded-2xl border border-gray-200/80 p-4 flex flex-col shadow-sm">
+          <span class="text-[11px] uppercase tracking-wide text-gray-500 mb-1">Movement</span>
+          <h3 class="text-base font-semibold mb-1">
+            <a href="article-4.html" class="text-gray-900 hover:text-brand-accent">Gentle Movement When You're Stressed</a>
+          </h3>
+          <p class="text-xs text-gray-600 flex-1">Short stretches and walks that help you release tension.</p>
+        </article>
+        <article class="bg-white rounded-2xl border border-gray-200/80 p-4 flex flex-col shadow-sm">
+          <span class="text-[11px] uppercase tracking-wide text-gray-500 mb-1">Nutrition</span>
+          <h3 class="text-base font-semibold mb-1">
+            <a href="article-5.html" class="text-gray-900 hover:text-brand-accent">Eating Well as a Form of Self-Care</a>
+          </h3>
+          <p class="text-xs text-gray-600 flex-1">Gentle, realistic ways to nourish yourself without strict rules.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- About & Contact sections -->
+    <section id="life" class="mt-10 border-t border-gray-200 pt-6">
+      <h2 class="text-sm font-semibold tracking-wide uppercase text-gray-600 mb-3">Life &amp; Relationships</h2>
+      <p class="text-sm text-gray-700 max-w-3xl">
+        Self-care isn’t just baths and candles. It’s how you relate to yourself, your time, and the people around you.
+        Explore ideas on boundaries, rest, and everyday habits that support a calmer life.
+      </p>
+    </section>
+
+    <section id="about" class="mt-10 border-t border-gray-200 pt-6">
+      <h2 class="text-lg font-serif font-semibold mb-2">About Calm Mind</h2>
+      <p class="text-sm text-gray-700 max-w-3xl">
+        Calm Mind is a small, independent project dedicated to realistic self-care. No extreme routines, no perfection.
+        Just simple practices you can fit into real life—whether you have five minutes or an hour.
+      </p>
+    </section>
+
+    <section id="contact" class="mt-8 border-t border-gray-200 pt-6">
+      <h2 class="text-lg font-serif font-semibold mb-2">Contact</h2>
+      <p class="text-sm text-gray-700 mb-3">Questions or ideas for future articles? Send a quick note.</p>
+      <form class="max-w-md space-y-3" action="index.html" method="post">
+        <input type="text" name="name" placeholder="Your name" class="w-full px-3 py-2 border border-gray-300 rounded text-sm">
+        <input type="email" name="email" placeholder="Your email" class="w-full px-3 py-2 border border-gray-300 rounded text-sm">
+        <textarea name="message" rows="4" placeholder="Your message" class="w-full px-3 py-2 border border-gray-300 rounded text-sm"></textarea>
+        <button type="submit" class="px-4 py-2 bg-brand-accent text-white text-sm font-medium rounded hover:bg-blue-600">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 text-sm mt-6">
+    <div class="max-w-6xl mx-auto px-3 py-5 flex flex-col md:flex-row items-center justify-between gap-3">
+      <p class="text-xs md:text-sm">&copy; 2025 Calm Mind — Self Care News &amp; Guides.</p>
+      <p class="text-[11px] text-gray-400">Made for learning and inspiration — not medical advice.</p>
     </div>
   </footer>
 
   <script src="app.js"></script>
 </body>
 </html>
+
